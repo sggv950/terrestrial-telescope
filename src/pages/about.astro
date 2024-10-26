@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import aaa from "../assets/aaa.jpg";
+---
+
+<Layout title="About">
+  <div class="flex flex-col gap-8 justify-evenly items-center rounded-full">
+    <Image width={512} class="w-64 rounded-full" src={aaa} alt="aaa" />
+    <h1>About</h1>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius minus
+      veritatis voluptatum ea reprehenderit accusamus atque, excepturi laborum
+      quae, officiis saepe facere aut iste perspiciatis expedita exercitationem
+      earum pariatur?
+    </div>
+  </div>
+</Layout>
